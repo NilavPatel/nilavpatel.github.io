@@ -1,2 +1,220 @@
-Hi Hello,
-My Name is Nilav Patel.
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* Set height of body and the document to 100% to enable "full page tabs" */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Style tab links */
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 25%;
+        }
+
+        .tablink:hover {
+            background-color: #777;
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            min-height:100%;
+        }
+
+        #About {
+            background-color: #9575cd;
+        }
+
+        #Skills {
+            background-color: #1e88e5;
+        }
+
+        #Portfolio {
+            background-color: #e57373;
+        }
+
+        #Contact {
+            background-color: #43a047;
+        }
+
+        #Skills img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 50%;
+        }
+
+        .skills-text {
+            font-size: 1.64rem;
+            line-height: 110%;
+            margin: 1.0933333333rem 0 .656rem 0;
+            text-align: center;
+        }
+    </style>
+    <title>Nilav Patel</title>
+</head>
+
+<body>
+
+    <button class="tablink" onclick="openPage('About', this, '#9575cd')" id="defaultOpen">About me</button>
+    <button class="tablink" onclick="openPage('Skills', this, '#1e88e5')">Skills</button>
+    <button class="tablink" onclick="openPage('Portfolio', this, '#e57373')">Portfolio</button>
+    <button class="tablink" onclick="openPage('Contact', this, '#43a047')">Contact me</button>
+
+    <div id="About" class="tabcontent">
+        <h3>About me</h3>
+        <p>Nilav Patel</p>
+        <p>Senior Software Engineer</p>
+    </div>
+
+    <div id="Skills" class="tabcontent">
+        <div class="container">
+            <div class="row ">
+                <div class="col col-3">
+                    <div class="skills-text">Asp.Net</div>
+                    <img src="images\aspnet.png">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">MVC</div>
+                    <img src="images\mvc.jpg">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">Angular</div>
+                    <img src="images\angular.png">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">Typescript</div>
+                    <img src="images\typescript.png">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col col-3">
+                    <div class="skills-text">SQL server</div>
+                    <img src="images\sql.png">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">Core</div>
+                    <img src="images\core.png">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">Web API</div>
+                    <img src="images\webapi.jpg">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">WCF</div>
+                    <img src="images\wcf.jpg">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col col-3">
+                    <div class="skills-text">Javascript</div>
+                    <img src="images\javascript.png">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">jQuery</div>
+                    <img src="images\jquery.png">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">HTML</div>
+                    <img src="images\html.png">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">CSS</div>
+                    <img src="images\css.png">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col col-3">
+                    <div class="skills-text">TFS</div>
+                    <img src="images\tfs.png">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">Github</div>
+                    <img src="images\github.png">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">NPM</div>
+                    <img src="images\npm.png">
+                </div>
+                <div class="col col-3">
+                    <div class="skills-text">Gulp</div>
+                    <img src="images\gulp.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Portfolio" class="tabcontent">
+        <h3>Portfolio</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h3>Contact me</h3>
+        <div><a href="mailto:nilavpatel1992@gmail.com">nilavpatel1992@gmail.com</a></div>
+        <div><a href="phone:+91 9558433644">+91 9558433644</a></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openPage(pageName, elmnt, color) {
+            // Hide all elements with class="tabcontent" by default */
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            // Show the specific tab content
+            document.getElementById(pageName).style.display = "block";
+
+            // Add the specific color to the button used to open the tab content
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
