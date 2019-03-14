@@ -17,6 +17,8 @@
             font: 20px Montserrat, sans-serif;
             line-height: 1.8;
             color: #f5f6f7;
+            width: 100%;
+            overflow-x: hidden;
         }
 
         p {
@@ -99,7 +101,7 @@
             color: white;
         }
 
-        .fa-google {
+        .fa-envelope {
             background: #dd4b39;
             color: white;
         }
@@ -165,6 +167,11 @@
             color: #117964;
             text-decoration: none;
         }
+
+        .horizontal-rule {
+            margin: 20px 48%;
+            border-top: 1px solid white
+        }
     </style>
 </head>
 
@@ -201,15 +208,22 @@
     </div>
 
     <div class="container-fluid bg-2 text-center" id="WHAT">
-        <h3>What Am I?</h3>
-        <p>My name is <b>Nilav Patel</b>. I have completed my Bachelor of Engineering in Information Technology from L.
-            D.
-            College of Engineering in 2014.</p>
-        <p>From last <b><i id="experience"></i></b>, I am working as a Senior Software Engineer. I love to write code,
-            programs,
-            algorithms. I am a passionate frontned and hardcore backend developer. I love to work with new emerging
-            front end technologies like Angular, Node,
-            jQuery, Javascript. And also love to work with Microsoft technologies.</p>
+        <div class="container">
+            <h3>What Am I?</h3>
+            <p>My name is <b>Nilav Patel</b>. I have completed my Bachelor of Engineering in Information Technology from
+                L.
+                D.
+                College of Engineering in 2014.</p>
+            <div class="horizontal-rule"></div>
+            <p>From last <b><i id="experience"></i></b>, I am working as a Senior Software Engineer. I love to write
+                code,
+                programs,
+                algorithms. I am a passionate frontned and hardcore backend developer. I love to work with new emerging
+                front end technologies like Angular, Node,
+                jQuery, Javascript. And also love to work with Microsoft technologies.</p>
+            <div class="horizontal-rule"></div>
+            <p>In free time I love to watch moview, play video games and travelling.</p>
+        </div>
     </div>
 
     <div class="container-fluid bg-5 text-center" id="TOOLS">
@@ -292,30 +306,32 @@
 
     <div class="container-fluid bg-1 text-center" id="SKILLS">
         <h3>What Are My Skills?</h3><br>
-        <div class="row">
-            <div class="col col-sm-2">
-                <h5>Commitment</h5>
-                <div class="skills-icon"><i class="fa fa-hands-helping"></i></div>
-            </div>
-            <div class="col col-sm-2">
-                <h5>Team Work</h5>
-                <div class="skills-icon"><i class="fa fa-users"></i></div>
-            </div>
-            <div class="col col-sm-2">
-                <h5>Adaptibility</h5>
-                <div class="skills-icon"><i class="fa fa-cogs"></i></div>
-            </div>
-            <div class="col col-sm-2">
-                <h5>Self Learning</h5>
-                <div class="skills-icon"><i class="fa fa-chalkboard-teacher"></i></div>
-            </div>
-            <div class="col col-sm-2">
-                <h5>Punctuality</h5>
-                <div class="skills-icon"><i class="fa fa-stopwatch"></i></div>
-            </div>
-            <div class="col col-sm-2">
-                <h5>Responsibility</h5>
-                <div class="skills-icon"><i class="fa fa-user-tie"></i></div>
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-4">
+                    <h5>Commitment</h5>
+                    <div class="skills-icon"><i class="fa fa-hands-helping"></i></div>
+                </div>
+                <div class="col col-sm-4">
+                    <h5>Team Work</h5>
+                    <div class="skills-icon"><i class="fa fa-users"></i></div>
+                </div>
+                <div class="col col-sm-4">
+                    <h5>Adaptibility</h5>
+                    <div class="skills-icon"><i class="fa fa-cogs"></i></div>
+                </div>
+                <div class="col col-sm-4">
+                    <h5>Self Learning</h5>
+                    <div class="skills-icon"><i class="fa fa-chalkboard-teacher"></i></div>
+                </div>
+                <div class="col col-sm-4">
+                    <h5>Punctuality</h5>
+                    <div class="skills-icon"><i class="fa fa-stopwatch"></i></div>
+                </div>
+                <div class="col col-sm-4">
+                    <h5>Responsibility</h5>
+                    <div class="skills-icon"><i class="fa fa-user-tie"></i></div>
+                </div>
             </div>
         </div>
     </div>
@@ -325,14 +341,19 @@
         <div class="row contact-me">
             <div class="col col-sm-1"></div>
             <div class="col col-sm-2">
-                <a href="mailto:nilavpatel1992@gmail.com" class="fab fa-google"></a></div>
+                <a href="mailto:nilavpatel1992@gmail.com" class="fa fa-envelope"></a>
+                <div>nilavpatel1992@gmail.com</div>
+            </div>
             <div class="col col-sm-2">
-                <a href="tel:+91 9558433644" class="fa fa-phone"></a></div>
+                <a href="tel:+91 9558433644" class="fa fa-phone"></a>
+                <div>+91 9558433644</div>
+            </div>
             <div class="col col-sm-2">
                 <a href="http://www.linkedin.com/in/nilav-patel-ba3601b5" class="fab fa-linkedin" target="_blank"></a>
             </div>
             <div class="col col-sm-2">
                 <a href="skype:live:nilavpatel2810?add" class="fab fa-skype"></a>
+                <div>live:nilavpatel2810</div>
             </div>
             <div class="col col-sm-2">
                 <a href="https://github.com/NilavPatel" class="fab fa-github" target="_blank"></a>
