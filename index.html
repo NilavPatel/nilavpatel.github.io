@@ -203,6 +203,24 @@
         .nav-tabs li:hover{
             cursor: pointer;
         }
+        .nav-tabs>li.active>a{
+            border:none;
+            border-radius: 0;
+        }
+        .nav-tabs>li.active>a:hover{
+            border:none;
+            border-radius: 0;
+        }
+        .nav-tabs>li>a{
+            border:none;
+            border-radius: 0;
+        }
+        .nav-tabs{
+            border:none;
+        }
+        #multiCollapseExample2{
+            padding-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -265,7 +283,7 @@
                 <li class="col col-sm-6"><a id="multiCollapseExample2-link">What Are My Development Methodology?</a></li>
             </ul>
         </div>
-        <div id="multiCollapseExample1">
+        <div id="multiCollapseExample1" class="bg-3">
             <div class="row">
                 <div class="row ">
                     <div class="col col-sm-3">
@@ -341,7 +359,7 @@
                 </div>
             </div>
         </div>
-        <div id="multiCollapseExample2" style="display:none">
+        <div id="multiCollapseExample2" class="bg-3" style="display:none">
             <div class="row ">
                 <div class="col col-sm-6">
                     <h1>Agile</h1>
