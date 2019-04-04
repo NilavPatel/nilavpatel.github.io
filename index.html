@@ -194,33 +194,6 @@
         .blink-text {
             animation: blink 1s linear infinite;
         }
-        #multiCollapseExample2 img{
-            height:200px;
-            width:200px;
-            padding:5px;
-            background-color:white;
-        }
-        .nav-tabs li:hover{
-            cursor: pointer;
-        }
-        .nav-tabs>li.active>a{
-            border:none;
-            border-radius: 0;
-        }
-        .nav-tabs>li.active>a:hover{
-            border:none;
-            border-radius: 0;
-        }
-        .nav-tabs>li>a{
-            border:none;
-            border-radius: 0;
-        }
-        .nav-tabs{
-            border:none;
-        }
-        #multiCollapseExample2{
-            padding-bottom: 20px;
-        }
     </style>
 </head>
 
@@ -277,13 +250,8 @@
     </div>
 
     <div class="container-fluid bg-5 text-center" id="TOOLS" style="padding-top: 10px;">
-        <div class="row">
-            <ul class="nav nav-tabs">
-                <li class="active col col-sm-6"><a id="multiCollapseExample1-link">What Are My Development Tools?</a></li>
-                <li class="col col-sm-6"><a id="multiCollapseExample2-link">What Are My Development Methodology?</a></li>
-            </ul>
-        </div>
-        <div id="multiCollapseExample1" class="bg-3">
+        <h3>What Are My Development Tools?</h3><br>
+        <div class="container">
             <div class="row">
                 <div class="row ">
                     <div class="col col-sm-3">
@@ -359,14 +327,18 @@
                 </div>
             </div>
         </div>
-        <div id="multiCollapseExample2" class="bg-3" style="display:none">
+    </div>
+
+    <div class="container-fluid bg-3 text-center" id="TOOLS">
+        <h3>What Are My Development Methodology?</h3><br>
+        <div class="container">
             <div class="row ">
                 <div class="col col-sm-6">
-                    <h1>Agile</h1>
+                    <h5>Agile</h5>
                     <img src="images\agile.png">
                 </div>
                 <div class="col col-sm-6">
-                    <h1>Waterfall</h1>
+                    <h5>Waterfall</h5>
                     <img src="images\Waterfall.png">
                 </div>
             </div>
@@ -455,21 +427,7 @@
             getExeperience();
             setTimeout(() => {
                 typeWriter();
-            }, 500);
-
-            $("#multiCollapseExample2-link").click(function () {
-                $("#multiCollapseExample2").show();
-                $("#multiCollapseExample1").hide();
-                $(".active").removeClass("active");
-                $(this).parent().addClass("active");
-            })
-
-            $("#multiCollapseExample1-link").click(function () {
-                $("#multiCollapseExample1").show();
-                $("#multiCollapseExample2").hide();
-                $(".active").removeClass("active");
-                $(this).parent().addClass("active");
-            })
+            }, 500);            
         });
 
         function typeWriter() {
