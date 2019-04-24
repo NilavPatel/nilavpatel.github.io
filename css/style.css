@@ -184,3 +184,7 @@ html,
         .blink-text {
             animation: blink 1s linear infinite;
         }
+
+.size-change:hover{
+    transform: scale(1.1);
+}
