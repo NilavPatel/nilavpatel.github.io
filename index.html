@@ -10,16 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
-        integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
     <script src='js\moment-precise-range.js'></script>
     <script src='js\custom.js'></script>
 </head>
@@ -33,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#WHO">Me</a>
+                <a class="navbar-brand link-primary" href="#WHO">Me</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -41,8 +37,9 @@
                     <li><a href="#WHAT">WHAT</a></li>
                     <li><a href="#TOOLS">TOOLS</a></li>
                     <li><a href="#SKILLS">SKILLS</a></li>
+                    <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
                     <li><a href="#WHERE">WHERE</a></li>
-                    <li><a href="doc/Nilav-Resume.docx" target="_blank"><b>RESUME</b></a></li>
+                    <li><a href="doc/Nilav-Resume.docx" target="_blank" class="link-primary"><b>RESUME</b></a></li>
                 </ul>
             </div>
         </div>
@@ -50,26 +47,18 @@
 
     <div class="container-fluid bg-1 text-center" id="WHO">
         <h3>Who Am I?</h3>
-        <img src="images/nilav.jpg" class="img-responsive img-circle" style="display:inline" alt="Nilav Patel"
-            width="350" height="350">
+        <img src="images/nilav.jpg" class="img-responsive img-circle" style="display:inline" alt="Nilav Patel" width="350" height="350">
         <h3 id="typint-text"></h3>
     </div>
 
     <div class="container-fluid bg-2 text-center" id="WHAT">
         <div class="container">
             <h3>What Am I?</h3>
-            <p>My name is <b>Nilav Patel</b>. I have completed my Bachelor of Engineering in Information Technology from
-                L.
-                D.
-                College of Engineering in 2014.</p>
+            <p>My name is <b>Nilav Patel</b>. I have completed my Bachelor of Engineering in Information Technology from L. D. College of Engineering in 2014.</p>
             <div class="horizontal-rule"></div>
-            <p>I have <b><i id="experience"></i></b> of experience, and currently working as a Senior Software Engineer.
-                I love to write
-                code,
-                programs,
-                algorithms. I am a passionate frontned and hardcore backend developer. I love to work with new emerging
-                front end technologies like Angular, Node,
-                jQuery, Javascript. And also love to work with Microsoft technologies.</p>
+            <p>I have <b><i id="experience"></i></b> of experience, and currently working as a Senior Software Engineer. I love to write code, programs, algorithms. I am a passionate frontned and hardcore backend developer. I love to work with new emerging
+                front end technologies like Angular, Node, jQuery, Javascript. And also love to work with Microsoft technologies.
+            </p>
             <div class="horizontal-rule"></div>
             <p>In free time I love to watch movies, play video games and travelling.</p>
         </div>
@@ -198,6 +187,73 @@
                 <div class="col col-sm-4">
                     <h5>Responsibility</h5>
                     <div class="skills-icon"><i class="fa fa-user-tie"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-5 text-center" id="PORTFOLIO">
+        <h3>Portfolio</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-4">
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/NilavPatel/ng-prime/master/src/assets/images/laptop.png">
+                        <h4 class="title">Angular 8 admin panel theme with PrimeNG</h4>
+                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/Ng-Prime">Github</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-sm-4">
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/NilavPatel/np-data-grid-package/master/src/assets/images/np-grid.png">
+                        <h4 class="title">Angular 8 data grid component</h4>
+                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/np-data-grid-package">Github</a></p>
+                    </div>
+                </div>
+                <div class="col col-sm-4">
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/NilavPatel/np-date-picker-package/master/src/assets/images/image1.PNG">
+                        <h4 class="title">Angular 8 date picker component</h4>
+                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/np-date-picker-package">Github</a></p>
+                    </div>
+                </div>
+                <div class="col col-sm-4">
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/NilavPatel/np-color-picker-package/master/src/assets/images/image1.PNG">
+                        <h4 class="title">Angular 8 color picker component</h4>
+                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/np-color-picker-package">Github</a></p>
+                    </div>
+                </div>
+                <div class="col col-sm-4">
+                    <div class="card">
+                        <img src="https://raw.githubusercontent.com/NilavPatel/np-time-picker-package/master/src/assets/images/image1.PNG">
+                        <h4 class="title">Angular 8 time picker component</h4>
+                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/np-time-picker-package">Github</a></p>
+                    </div>
+                </div>
+                <div class="col col-sm-4">
+                    <div class="card">
+                        <img src="images\code.png">
+                        <h4 class="title">ADO.Net ORM C# with Unit testing</h4>
+                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/MyORM">Github</a></p>
+                    </div>
+                </div>
+                <div class="col col-sm-4">
+                    <div class="card">
+                        <img src="images\code.png">
+                        <h4 class="title">N Layered Application Architecture C#</h4>
+                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/NLayeredApp">Github</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-sm-4">
+                    <div class="card">
+                        <img src="images\code.png">
+                        <h4 class="title">C# design patterns samples</h4>
+                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/DemoCSharp">Github</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
