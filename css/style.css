@@ -123,8 +123,8 @@ p {
 }
 
 #TOOLS .large-img {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
 }
 
 .SKILLS {
@@ -182,10 +182,6 @@ p {
 
 .blink-text {
     animation: blink 1s linear infinite;
-}
-
-.size-change:hover {
-    transform: scale(1.1);
 }
 
 .navbar-nav li {
