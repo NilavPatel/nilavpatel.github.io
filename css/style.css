@@ -236,3 +236,12 @@ p {
 .link-primary:hover {
     color: #1abc9c !important;
 }
+
+.navbar-brand {
+    padding: 0px 10px;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: 200px;
+}
