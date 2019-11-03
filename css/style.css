@@ -259,3 +259,9 @@ p {
     border-radius: 10px;
     padding: 10px;
 }
+
+.name-header b{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 7rem;
+    font-weight: 500;
+}
