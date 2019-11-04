@@ -1,20 +1,6 @@
-var i = 0;
-var txt = "I am Nilav Patel.";
-
 $(document).ready(function () {
     getExeperience();
-    setTimeout(() => {
-        typeWriter();
-    }, 500);
 });
-
-function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("typint-text").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100);
-    }
-}
 
 function getExeperience() {
     var starts = moment('2014-06-01 12:53:12');
