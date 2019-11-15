@@ -60,6 +60,7 @@ p {
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    background: transparent;
 }
 
 .fa,
@@ -260,8 +261,6 @@ p {
     padding: 10px;
 }
 
-.name-header b{
-    font-family: 'Herr Von Muellerhoff', cursive;
-    font-size: 7rem;
-    font-weight: 500;
+h3 strong{
+    font-size: 60px;
 }

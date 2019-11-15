@@ -21,8 +21,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
         integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
     <script src='js\moment-precise-range.js'></script>
-    <script src='js\custom.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function () {
+            getExeperience();
+        });
+
+        function getExeperience() {
+            var starts = moment('2014-06-01 12:53:12');
+            var ends = moment();
+
+            var result = moment.preciseDiff(starts, ends, true);
+            var strResult = result.years + ' Years ' + result.months + ' Months ';
+
+            $("#experience").html(strResult);
+        }
+    </script>
 </head>
 
 <body>
@@ -52,7 +65,7 @@
         <h3>Who Am I?</h3>
         <img src="images/nilav.jpg" class="img-responsive img-circle" style="display:inline" alt="Nilav Patel"
             width="350" height="350">
-        <h3 class="name-header" style="display: none;">I am <b>Nilav Patel</b>.</h3>
+        <h3>I am <strong>Nilav Patel</strong>.</h3>
     </div>
 
     <div class="container-fluid bg-2 text-center" id="WHAT">
