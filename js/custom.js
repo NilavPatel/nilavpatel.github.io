@@ -1,5 +1,6 @@
 $(document).ready(function () {
     getExeperience();
+    $(".name-header").show();
 });
 
 function getExeperience() {
