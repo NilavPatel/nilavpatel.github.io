@@ -19,7 +19,8 @@ p {
 }
 
 .bg-1 {
-    background-image: linear-gradient(140deg, #39e2c9 0%, #2d97cb 100%);
+    background-color: #738bdc;
+    background-image: linear-gradient(315deg, #738bdc 0%, #48c3eb 74%);
     /* Green */
     color: #ffffff;
 }
@@ -193,7 +194,7 @@ p {
 }
 
 .navbar-nav li a:hover {
-    color: #39e2c9 !important;
+    color: #48c3eb !important;
 }
 
 .card {
@@ -217,7 +218,8 @@ p {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-image: linear-gradient(140deg, #39e2c9 0%, #2d97cb 100%);
+    background-color: #738bdc;
+    background-image: linear-gradient(315deg, #738bdc 0%, #48c3eb 74%);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -237,7 +239,7 @@ p {
 }
 
 .link-primary:hover {
-    color: #39e2c9 !important;
+    color: #48c3eb !important;
 }
 
 .navbar-brand {
@@ -251,16 +253,16 @@ p {
 
 .navbar-nav li a:hover {
     padding-bottom: 10px;
-    border-bottom: 2px solid #39e2c9;
+    border-bottom: 2px solid #48c3eb;
 }
 
 .fa-chevron-up {
-    background-image: linear-gradient(140deg, #2d97cb 0%, #39e2c9 100%);
+    background-color: #48c3eb;
     color: white;
     border-radius: 10px;
     padding: 10px;
 }
 
-h1 strong{
+h1 strong {
     font-size: 60px;
 }
