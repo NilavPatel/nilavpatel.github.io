@@ -19,8 +19,7 @@ p {
 }
 
 .bg-1 {
-    background-color: #738bdc;
-    background-image: linear-gradient(315deg, #738bdc 0%, #48c3eb 74%);
+    background-color: #3f51b5;
     /* Green */
     color: #ffffff;
 }
@@ -134,7 +133,7 @@ p {
 }
 
 .SKILLS {
-    text-align: center
+    text-align: center;
 }
 
 .skills-icon .fa {
@@ -162,7 +161,7 @@ p {
 
 .horizontal-rule {
     margin: 20px 48%;
-    border-top: 1px solid white
+    border-top: 1px solid white;
 }
 
 #TOOLS .col-sm-3 {
@@ -218,8 +217,7 @@ p {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #738bdc;
-    background-image: linear-gradient(315deg, #738bdc 0%, #48c3eb 74%);
+    background-color: #3f51b5;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -251,13 +249,16 @@ p {
     width: 200px;
 }
 
+.navbar-nav li a {
+    border-bottom: 2px solid #ffffff;
+}
+
 .navbar-nav li a:hover {
-    padding-bottom: 10px;
-    border-bottom: 2px solid #48c3eb;
+    border-bottom: 2px solid #3f51b5;
 }
 
 .fa-chevron-up {
-    background-color: #48c3eb;
+    background-color: #1a237e;
     color: white;
     border-radius: 10px;
     padding: 10px;
@@ -268,5 +269,9 @@ h1 strong {
 }
 
 .design-text {
-    text-shadow: 0 1px 0 hsl(174, 5%, 80%), 0 2px 0 hsl(174, 5%, 75%), 0 3px 0 hsl(174, 5%, 70%), 0 4px 0 hsl(174, 5%, 66%), 0 5px 0 hsl(174, 5%, 64%), 0 6px 0 hsl(174, 5%, 62%), 0 7px 0 hsl(174, 5%, 61%), 0 8px 0 hsl(174, 5%, 60%), 0 0 5px rgba(0, 0, 0, .05), 0 1px 3px rgba(0, 0, 0, .2), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .3);
+    text-shadow: 0 1px 0 hsl(174, 5%, 80%), 0 2px 0 hsl(174, 5%, 75%), 0 3px 0 hsl(174, 5%, 70%),
+        0 4px 0 hsl(174, 5%, 66%), 0 5px 0 hsl(174, 5%, 64%), 0 6px 0 hsl(174, 5%, 62%), 0 7px 0 hsl(174, 5%, 61%),
+        0 8px 0 hsl(174, 5%, 60%), 0 0 5px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.2),
+        0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2),
+        0 20px 20px rgba(0, 0, 0, 0.3);
 }
