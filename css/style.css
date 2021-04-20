@@ -193,7 +193,7 @@ p {
 }
 
 .navbar-nav li a:hover {
-    color: #48c3eb !important;
+    color: #3f51b5 !important;
 }
 
 .card {
@@ -237,7 +237,7 @@ p {
 }
 
 .link-primary:hover {
-    color: #48c3eb !important;
+    color: #3f51b5 !important;
 }
 
 .navbar-brand {
