@@ -19,26 +19,22 @@ p {
 }
 
 .bg-1 {
-  background-color: #3f51b5;
-  /* Green */
+  background: linear-gradient(to right, #3f51b5, #021b79);
   color: #ffffff;
 }
 
 .bg-2 {
   background-color: #1d273f;
-  /* Dark Blue */
   color: #ffffff;
 }
 
 .bg-3 {
   background-color: #ffffff;
-  /* White */
   color: #555555;
 }
 
 .bg-4 {
   background-color: #1d273f;
-  /* Black Gray */
   color: #fff;
 }
 
@@ -54,8 +50,14 @@ p {
 
 .navbar {
   font-size: 16px;
-  background: transparent;
   margin-bottom: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  border: none;
+  border-radius: 0px;
+  z-index: 999;
+  background-color: #f8f8f8;
 }
 
 .navbar-collapse {
@@ -63,7 +65,11 @@ p {
 }
 
 .landing-page .container-fluid {
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa,
@@ -148,7 +154,7 @@ p {
   opacity: 1;
 }
 
-.top-anchore {
+.top-anchor {
   height: 50px;
   width: 50px;
   margin: 20px;
@@ -156,9 +162,10 @@ p {
   right: 0px;
   bottom: 0px;
   display: none;
+  cursor: pointer;
 }
 
-.top-anchore a:hover i {
+.top-anchor a:hover i {
   text-decoration: none;
 }
 
@@ -176,7 +183,7 @@ p {
 }
 
 .where-text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
@@ -193,6 +200,7 @@ p {
 
 .navbar-nav li a {
   padding: 10px !important;
+  border-bottom: 2px solid #f8f8f8;
 }
 
 .navbar-nav li a:hover {
@@ -221,7 +229,7 @@ p {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #3f51b5;
+  background: linear-gradient(to right, #3f51b5, #021b79);
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -253,12 +261,8 @@ p {
   width: 200px;
 }
 
-.navbar-nav li a {
-  border-bottom: 2px solid #ffffff;
-}
-
 .fa-chevron-up {
-  background-color: #1a237e;
+  background-color: #3f51b5;
   color: white;
   border-radius: 10px;
   padding: 10px;
@@ -278,6 +282,7 @@ h1 strong {
     0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3);
 }
 
-.landing-page {
-  min-height: 100vh;
+footer {
+  padding: 15px 0px;
+  font-size: 16px;
 }

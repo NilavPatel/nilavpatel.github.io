@@ -43,10 +43,13 @@
             window.addEventListener('scroll', (event) => {
                 var y = window.scrollY;
                 if (y >= 100) {
-                    $(".top-anchore").show();
+                    $(".top-anchor").show();
                 } else {
-                    $(".top-anchore").hide();
+                    $(".top-anchor").hide();
                 }
+            });
+            $(".top-anchor").click(function () {
+                window.scrollTo(0, 0);
             });
         });
 
@@ -64,7 +67,7 @@
 
 <body>
     <div class="landing-page">
-        <nav class="navbar navbar-default" id="top">
+        <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
@@ -139,7 +142,7 @@
                         <img src="images\sql.png" alt="no image found">
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <h5>Postgre SQL</h5>
+                        <h5>PostgreSQL</h5>
                         <img src="images\postgres.png" alt="no image found">
                     </div>
                     <div class="col-xs-6 col-sm-3">
@@ -154,25 +157,25 @@
                 <div class="row ">
                     <div class="col-xs-6 col-sm-3">
                         <h5>Javascript</h5>
-                        <img src="images\Javascript.png" alt="no image found">
+                        <img src="images\javascript.png" alt="no image found">
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <h5>jQuery</h5>
-                        <img src="images\jQuery.png" alt="no image found">
+                        <img src="images\jquery.png" alt="no image found">
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <h5>Angular</h5>
                         <img src="images\angular.png" alt="no image found">
                     </div>
                     <div class="col-xs-6 col-sm-3">
-                        <h5>React</h5>
-                        <img src="images\react.png" alt="no image found">
+                        <h5>Bootstrap</h5>
+                        <img src="images\bootstrap.png" alt="no image found">
                     </div>
                 </div>
                 <div class="row ">
                     <div class="col-xs-6 col-sm-3">
-                        <h5>Node JS</h5>
-                        <img src="images\node.png" alt="no image found">
+                        <h5>SASS</h5>
+                        <img src="images\sass.png" alt="no image found">
                     </div>
                     <div class="col-xs-6 col-sm-3">
                         <h5>TFS</h5>
@@ -322,11 +325,11 @@
         </div>
     </div>
 
-    <div class="top-anchore">
-        <a href="#top"><i class="fa fa-chevron-up"></i></a>
+    <div class="top-anchor">
+        <a><i class="fa fa-chevron-up"></i></a>
     </div>
 
-    <footer class="container-fluid bg-4 text-center">
+    <footer class="bg-4 text-center">
         <p>
         <div>Copyright (c) <span id="year"></span> Nilav Patel. Made with <span style="color:red;">❤</span></div>
         </p>
