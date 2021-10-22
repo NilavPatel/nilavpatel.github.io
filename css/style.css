@@ -58,14 +58,27 @@ p {
   border-radius: 0px;
   z-index: 999;
   background-color: #f8f8f8;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
 }
 
 .navbar-collapse {
   padding-top: 6px;
 }
 
-.landing-page .container-fluid {
-  min-height: calc(100vh);
+.main {
+  margin-top: 50px;
+  position: fixed;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.main-page {
+  overflow: auto;
+  height: 100%;
+}
+
+.my-info {
+  min-height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,21 +165,6 @@ p {
 .fab:hover {
   color: white;
   opacity: 1;
-}
-
-.top-anchor {
-  height: 50px;
-  width: 50px;
-  margin: 20px;
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  display: none;
-  cursor: pointer;
-}
-
-.top-anchor a:hover i {
-  text-decoration: none;
 }
 
 .horizontal-rule {

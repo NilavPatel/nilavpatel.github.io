@@ -40,16 +40,8 @@
         $(document).ready(function () {
             getExeperience();
             $("#year").html(new Date().getFullYear());
-            window.addEventListener('scroll', (event) => {
-                var y = window.scrollY;
-                if (y >= 100) {
-                    $(".top-anchor").show();
-                } else {
-                    $(".top-anchor").hide();
-                }
-            });
-            $(".top-anchor").click(function () {
-                window.scrollTo(0, 0);
+            $(".nav li").click(function () {
+                $("#myNavbar").removeClass("in");
             });
         });
 
@@ -66,7 +58,7 @@
 </head>
 
 <body>
-    <div class="landing-page">
+    <div class="main">
         <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -88,252 +80,261 @@
             </div>
         </nav>
 
-        <div class="container-fluid bg-1 text-center" id="WHO">
-            <h3>Who Am I?</h3>
-            <img src="images/nilav.jpg" class="img-responsive img-circle" style="display:inline" alt="Nilav Patel"
-                width="350" height="350" alt="no image found">
-            <h3>I am</h3>
-            <h1 class="design-text"><strong>Nilav Patel</strong></h1>
+        <div class="main-page">
+            <div class="container-fluid bg-1 text-center my-info" id="WHO">
+                <h3>Who Am I?</h3>
+                <img src="images/nilav.jpg" class="img-responsive img-circle" style="display:inline" alt="Nilav Patel"
+                    width="350" height="350" alt="no image found">
+                <h3>I am</h3>
+                <h1 class="design-text"><strong>Nilav Patel</strong></h1>
+            </div>
+
+            <div class="container-fluid bg-2 text-center" id="WHAT">
+                <div class="container">
+                    <h3>What Am I?</h3>
+                    <p>I am a <b>Software Engineer</b>. I have completed my Bachelor of Engineering in Information
+                        Technology
+                        from <a href="http://ldce.ac.in/" target="_blank">L. D. College of Engineering</a> in 2014.</p>
+                    <div class="horizontal-rule"></div>
+                    <p>I have <b><i id="experience"></i></b> of experience, and currently working as a Senior Software
+                        Engineer.
+                        <br>I love to write code, programs, algorithms. I am a passionate frontend and hardcore backend
+                        developer. I love to work with new emerging front end technologies like Angular, Node, jQuery,
+                        Javascript. And also love to work with Microsoft
+                        technologies.
+                    </p>
+                    <div class="horizontal-rule"></div>
+                    <p>In free time I love to watch movies, play video games and travelling.</p>
+                </div>
+            </div>
+
+            <div class="container-fluid bg-5 text-center" id="TOOLS">
+                <h3>What Are My Development Tools?</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="row ">
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>C#</h5>
+                                <img src="images\csharp.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>MVC</h5>
+                                <img src="images\mvc.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>Web API</h5>
+                                <img src="images\webapi.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>Asp.Net Core</h5>
+                                <img src="images\dotnetcore.png" alt="no image found">
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>SQL server</h5>
+                                <img src="images\sql.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>PostgreSQL</h5>
+                                <img src="images\postgres.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>HTML</h5>
+                                <img src="images\html.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>CSS</h5>
+                                <img src="images\css.png" alt="no image found">
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>Javascript</h5>
+                                <img src="images\javascript.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>jQuery</h5>
+                                <img src="images\jquery.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>Angular</h5>
+                                <img src="images\angular.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>Bootstrap</h5>
+                                <img src="images\bootstrap.png" alt="no image found">
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>SASS</h5>
+                                <img src="images\sass.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>TFS</h5>
+                                <img src="images\tfs.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>Github</h5>
+                                <img src="images\github.png" alt="no image found">
+                            </div>
+                            <div class="col-xs-6 col-sm-3">
+                                <h5>Jira</h5>
+                                <img src="images\jira.png" alt="no image found">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid bg-3 text-center" id="TOOLS">
+                <h3>What Are My Development Methodology?</h3>
+                <div class="container">
+                    <div class="row ">
+                        <div class="col col-sm-6">
+                            <h3>Agile</h3>
+                            <img class="large-img" src="images\agile.png" alt="no image found">
+                        </div>
+                        <div class="col col-sm-6">
+                            <h3>Waterfall</h3>
+                            <img class="large-img" src="images\waterfall.png" alt="no image found">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid bg-1 text-center" id="SKILLS">
+                <h3>What Are My Skills?</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4">
+                            <h5>Commitment</h5>
+                            <div class="skills-icon"><i class="fa fa-hands-helping"></i></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4">
+                            <h5>Team Work</h5>
+                            <div class="skills-icon"><i class="fa fa-users"></i></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4">
+                            <h5>Adaptability</h5>
+                            <div class="skills-icon"><i class="fa fa-cogs"></i></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4">
+                            <h5>Self Learning</h5>
+                            <div class="skills-icon"><i class="fa fa-chalkboard-teacher"></i></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4">
+                            <h5>Punctuality</h5>
+                            <div class="skills-icon"><i class="fa fa-stopwatch"></i></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4">
+                            <h5>Responsibility</h5>
+                            <div class="skills-icon"><i class="fa fa-user-tie"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid bg-5 text-center" id="PORTFOLIO">
+                <h3>Portfolio</h3>
+                <div>
+                    <div class="row">
+                        <div class="col col-sm-4 col-md-4">
+                            <div class="card">
+                                <img src="images\code.png" alt="no image found">
+                                <h4 class="title">Angular 8 admin panel theme with PrimeNG</h4>
+                                <p><a class="button" target="_blank"
+                                        href="https://github.com/NilavPatel/Ng-Prime">Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-sm-4 col-md-4">
+                            <div class="card">
+                                <img src="images\code.png" alt="no image found">
+                                <h4 class="title">Angular 10+ UI Components</h4>
+                                <p><a class="button" target="_blank"
+                                        href="https://www.npmjs.com/package/np-ui-lib">NPM</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-sm-4 col-md-4">
+                            <div class="card">
+                                <img src="images\code.png" alt="no image found">
+                                <h4 class="title">C# ADO.Net ORM</h4>
+                                <p><a class="button" target="_blank"
+                                        href="https://github.com/NilavPatel/MyORM">Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-sm-4 col-md-4">
+                            <div class="card">
+                                <img src="images\code.png" alt="no image found">
+                                <h4 class="title">C# N Layered Application Architecture</h4>
+                                <p><a class="button" target="_blank"
+                                        href="https://github.com/NilavPatel/NLayeredApp">Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-sm-4 col-md-4">
+                            <div class="card">
+                                <img src="images\code.png" alt="no image found">
+                                <h4 class="title">C# CQRS Architecture</h4>
+                                <p><a class="button" target="_blank"
+                                        href="https://github.com/NilavPatel/Todo.CQRS">Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col col-sm-4 col-md-4">
+                            <div class="card">
+                                <img src="images\code.png" alt="no image found">
+                                <h4 class="title">C# Guard Pattern</h4>
+                                <p><a class="button" target="_blank"
+                                        href="https://github.com/NilavPatel/guard-pattern">Github</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid bg-3 text-center" id="WHERE">
+                <h3>Where To Find Me?</h3><br>
+                <div class="row contact-me">
+                    <div class="col col-sm-1"></div>
+                    <div class="col col-sm-2">
+                        <a href="mailto:nilavpatel1992@gmail.com" class="fa fa-envelope"></a>
+                        <div class="where-text">nilavpatel1992@gmail.com</div>
+                    </div>
+                    <div class="col col-sm-2">
+                        <a href="tel:+91 9558433644" class="fa fa-phone"></a>
+                        <div class="where-text">+91 9558433644</div>
+                    </div>
+                    <div class="col col-sm-2">
+                        <a href="http://www.linkedin.com/in/nilav-patel-ba3601b5" class="fab fa-linkedin"
+                            target="_blank"></a>
+                        <div class="where-text">nilav-patel-ba3601b5</div>
+                    </div>
+                    <div class="col col-sm-2">
+                        <a href="skype:live:nilavpatel2810?add" class="fab fa-skype"></a>
+                        <div class="where-text">live:nilavpatel2810</div>
+                    </div>
+                    <div class="col col-sm-2">
+                        <a href="https://github.com/NilavPatel" class="fab fa-github" target="_blank"></a>
+                        <div class="where-text">NilavPatel</div>
+                    </div>
+                    <div class="col col-sm-1"></div>
+                </div>
+            </div>
+
+            <footer class="bg-4 text-center">
+                <p>
+                <div>Copyright (c) <span id="year"></span> Nilav Patel. Made with <span style="color:red;">❤</span>
+                </div>
+                </p>
+            </footer>
         </div>
     </div>
-
-    <div class="container-fluid bg-2 text-center" id="WHAT">
-        <div class="container">
-            <h3>What Am I?</h3>
-            <p>I am a <b>Software Engineer</b>. I have completed my Bachelor of Engineering in Information Technology
-                from <a href="http://ldce.ac.in/" target="_blank">L. D. College of Engineering</a> in 2014.</p>
-            <div class="horizontal-rule"></div>
-            <p>I have <b><i id="experience"></i></b> of experience, and currently working as a Senior Software Engineer.
-                <br>I love to write code, programs, algorithms. I am a passionate frontend and hardcore backend
-                developer. I love to work with new emerging front end technologies like Angular, Node, jQuery,
-                Javascript. And also love to work with Microsoft
-                technologies.
-            </p>
-            <div class="horizontal-rule"></div>
-            <p>In free time I love to watch movies, play video games and travelling.</p>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-5 text-center" id="TOOLS" style="padding-top: 10px;">
-        <h3>What Are My Development Tools?</h3>
-        <div class="container">
-            <div class="row">
-                <div class="row ">
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>C#</h5>
-                        <img src="images\csharp.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>MVC</h5>
-                        <img src="images\mvc.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>Web API</h5>
-                        <img src="images\webapi.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>Asp.Net Core</h5>
-                        <img src="images\dotnetcore.png" alt="no image found">
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>SQL server</h5>
-                        <img src="images\sql.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>PostgreSQL</h5>
-                        <img src="images\postgres.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>HTML</h5>
-                        <img src="images\html.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>CSS</h5>
-                        <img src="images\css.png" alt="no image found">
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>Javascript</h5>
-                        <img src="images\javascript.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>jQuery</h5>
-                        <img src="images\jquery.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>Angular</h5>
-                        <img src="images\angular.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>Bootstrap</h5>
-                        <img src="images\bootstrap.png" alt="no image found">
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>SASS</h5>
-                        <img src="images\sass.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>TFS</h5>
-                        <img src="images\tfs.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>Github</h5>
-                        <img src="images\github.png" alt="no image found">
-                    </div>
-                    <div class="col-xs-6 col-sm-3">
-                        <h5>Jira</h5>
-                        <img src="images\jira.png" alt="no image found">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-3 text-center" id="TOOLS">
-        <h3>What Are My Development Methodology?</h3>
-        <div class="container">
-            <div class="row ">
-                <div class="col col-sm-6">
-                    <h3>Agile</h3>
-                    <img class="large-img" src="images\agile.png" alt="no image found">
-                </div>
-                <div class="col col-sm-6">
-                    <h3>Waterfall</h3>
-                    <img class="large-img" src="images\waterfall.png" alt="no image found">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-1 text-center" id="SKILLS">
-        <h3>What Are My Skills?</h3>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6 col-sm-4">
-                    <h5>Commitment</h5>
-                    <div class="skills-icon"><i class="fa fa-hands-helping"></i></div>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                    <h5>Team Work</h5>
-                    <div class="skills-icon"><i class="fa fa-users"></i></div>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                    <h5>Adaptability</h5>
-                    <div class="skills-icon"><i class="fa fa-cogs"></i></div>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                    <h5>Self Learning</h5>
-                    <div class="skills-icon"><i class="fa fa-chalkboard-teacher"></i></div>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                    <h5>Punctuality</h5>
-                    <div class="skills-icon"><i class="fa fa-stopwatch"></i></div>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                    <h5>Responsibility</h5>
-                    <div class="skills-icon"><i class="fa fa-user-tie"></i></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-5 text-center" id="PORTFOLIO">
-        <h3>Portfolio</h3>
-        <div>
-            <div class="row">
-                <div class="col col-sm-4 col-md-4">
-                    <div class="card">
-                        <img src="images\code.png" alt="no image found">
-                        <h4 class="title">Angular 8 admin panel theme with PrimeNG</h4>
-                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/Ng-Prime">Github</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col col-sm-4 col-md-4">
-                    <div class="card">
-                        <img src="images\code.png" alt="no image found">
-                        <h4 class="title">Angular 10+ UI Components</h4>
-                        <p><a class="button" target="_blank" href="https://www.npmjs.com/package/np-ui-lib">NPM</a></p>
-                    </div>
-                </div>
-                <div class="col col-sm-4 col-md-4">
-                    <div class="card">
-                        <img src="images\code.png" alt="no image found">
-                        <h4 class="title">C# ADO.Net ORM</h4>
-                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/MyORM">Github</a></p>
-                    </div>
-                </div>
-                <div class="col col-sm-4 col-md-4">
-                    <div class="card">
-                        <img src="images\code.png" alt="no image found">
-                        <h4 class="title">C# N Layered Application Architecture</h4>
-                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/NLayeredApp">Github</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col col-sm-4 col-md-4">
-                    <div class="card">
-                        <img src="images\code.png" alt="no image found">
-                        <h4 class="title">C# CQRS Architecture</h4>
-                        <p><a class="button" target="_blank" href="https://github.com/NilavPatel/Todo.CQRS">Github</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col col-sm-4 col-md-4">
-                    <div class="card">
-                        <img src="images\code.png" alt="no image found">
-                        <h4 class="title">C# Guard Pattern</h4>
-                        <p><a class="button" target="_blank"
-                                href="https://github.com/NilavPatel/guard-pattern">Github</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-3 text-center" id="WHERE">
-        <h3>Where To Find Me?</h3><br>
-        <div class="row contact-me">
-            <div class="col col-sm-1"></div>
-            <div class="col col-sm-2">
-                <a href="mailto:nilavpatel1992@gmail.com" class="fa fa-envelope"></a>
-                <div class="where-text">nilavpatel1992@gmail.com</div>
-            </div>
-            <div class="col col-sm-2">
-                <a href="tel:+91 9558433644" class="fa fa-phone"></a>
-                <div class="where-text">+91 9558433644</div>
-            </div>
-            <div class="col col-sm-2">
-                <a href="http://www.linkedin.com/in/nilav-patel-ba3601b5" class="fab fa-linkedin" target="_blank"></a>
-                <div class="where-text">nilav-patel-ba3601b5</div>
-            </div>
-            <div class="col col-sm-2">
-                <a href="skype:live:nilavpatel2810?add" class="fab fa-skype"></a>
-                <div class="where-text">live:nilavpatel2810</div>
-            </div>
-            <div class="col col-sm-2">
-                <a href="https://github.com/NilavPatel" class="fab fa-github" target="_blank"></a>
-                <div class="where-text">NilavPatel</div>
-            </div>
-            <div class="col col-sm-1"></div>
-        </div>
-    </div>
-
-    <div class="top-anchor">
-        <a><i class="fa fa-chevron-up"></i></a>
-    </div>
-
-    <footer class="bg-4 text-center">
-        <p>
-        <div>Copyright (c) <span id="year"></span> Nilav Patel. Made with <span style="color:red;">❤</span></div>
-        </p>
-    </footer>
 </body>
 
 </html>
